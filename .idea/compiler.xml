@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Annotation profile for shop-manager-service" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="shop-manager-service" />
+      </profile>
+      <profile default="false" name="Annotation profile for shop-manager-web" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="shop-manager-web" />
+      </profile>
+      <profile default="false" name="Annotation profile for shop-manager-mapper" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="shop-manager-mapper" />
+      </profile>
+      <profile default="false" name="Annotation profile for shop-manager-pojo" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="shop-manager-pojo" />
+      </profile>
+      <profile default="false" name="Annotation profile for shop-commons" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="shop-commons" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="shop-commons" target="1.7" />
+      <module name="shop-manager" target="1.7" />
+      <module name="shop-manager-mapper" target="1.7" />
+      <module name="shop-manager-pojo" target="1.7" />
+      <module name="shop-manager-service" target="1.7" />
+      <module name="shop-manager-web" target="1.7" />
+      <module name="shop-parent" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

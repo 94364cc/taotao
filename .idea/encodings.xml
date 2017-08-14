@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/shop-commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-manager" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-manager/shop-manager-mapper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-manager/shop-manager-pojo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-manager/shop-manager-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-manager/shop-manager-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-manager/shop-manager-web/src/main/resources/spring/applicationContext-dao.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/shop-manager/shop-manager-web/src/main/resources/spring/applicationContext-service.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/shop-manager/shop-manager-web/src/main/resources/spring/applicationContext-trans.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/shop-manager/shop-manager-web/src/main/resources/spring/springmvc.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/shop-parent" charset="UTF-8" />
+  </component>
+</project>
