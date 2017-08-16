@@ -1,6 +1,7 @@
 package com.taotao.mapper;
 
 import java.util.List;
+import java.util.Map;
 
 import com.taotao.pojo.TbItemCat;
 import com.taotao.pojo.TbItemCatExample;
@@ -28,4 +29,6 @@ public interface TbItemCatMapper {
     int updateByPrimaryKeySelective(TbItemCat record);
 
     int updateByPrimaryKey(TbItemCat record);
+
+
 }

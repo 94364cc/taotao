@@ -34,4 +34,10 @@ public class ItemController {
     public EUDataGridResult getItemList(int page,int rows){
         return itemService.getItemList(page, rows);
     }
+
+//    @RequestMapping("/item/add")
+//    @ResponseBody
+//    public void addItem(){
+//
+//    }
 }
