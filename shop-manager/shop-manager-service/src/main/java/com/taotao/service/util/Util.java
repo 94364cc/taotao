@@ -1,4 +1,4 @@
-package com.taotaio.util;
+package com.taotao.service.util;
 
 import com.taotao.pojo.Message;
 
@@ -8,7 +8,7 @@ import java.util.Random;
 /**
  * Created by Administrator on 2017/8/17.
  */
-public class FileUtil {
+public class Util {
 
     //生成图片名字(防止重复)
     public static String getFileName(){
@@ -43,18 +43,32 @@ public class FileUtil {
         return message;
     }
 
-    //测试文件上传
-    public static void main(String[] args) {
-        File file =new File("C:\\Users\\Administrator\\Desktop\\1.png");
-        try {
-            FileInputStream in=new FileInputStream(file);
-            System.out.println(file.length());
-            fileUpload(file.getName(),in,"D:\\");
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
+    //uuid生成器
+    public static long getItemId() {
+        //取当前时间的长整形值包含毫秒
+        long millis = System.currentTimeMillis();
+        //加上两位随机数
+        Random random = new Random();
+        int end2 = random.nextInt(99);
+        //如果不足两位前面补0
+        String str = millis + String.format("%02d", end2);
+        long id = new Long(str);
+        return id;
     }
+
+
+//    //测试文件上传
+//    public static void main(String[] args) {
+//        File file =new File("C:\\Users\\Administrator\\Desktop\\1.png");
+//        try {
+//            FileInputStream in=new FileInputStream(file);
+//            System.out.println(file.length());
+//            fileUpload(file.getName(),in,"D:\\");
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//
+//    }
 }

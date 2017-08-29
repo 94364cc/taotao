@@ -2,6 +2,7 @@ package com.taotao.controller;
 
 import com.github.pagehelper.PageHelper;
 import com.taotao.pojo.EUDataGridResult;
+import com.taotao.pojo.TaotaoResult;
 import com.taotao.pojo.TbItem;
 import com.taotao.pojo.TbItemExample;
 import com.taotao.service.ItemService;
@@ -22,6 +23,7 @@ public class ItemController {
     private ItemService itemService;
 
 
+
     @RequestMapping("/item/{itemId}")
     @ResponseBody
     public TbItem getItemById(@PathVariable Long itemId){
@@ -35,9 +37,9 @@ public class ItemController {
         return itemService.getItemList(page, rows);
     }
 
-//    @RequestMapping("/item/add")
-//    @ResponseBody
-//    public void addItem(){
-//
-//    }
+    @RequestMapping("/item/save")
+    @ResponseBody
+    public TaotaoResult createItem(TbItem item, String desc) throws Exception {
+        return itemService.createItem(item,desc);
+    }
 }
