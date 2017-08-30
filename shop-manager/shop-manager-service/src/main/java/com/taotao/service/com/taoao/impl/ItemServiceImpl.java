@@ -3,6 +3,7 @@ package com.taotao.service.com.taoao.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.taotao.constant.Constant;
 import com.taotao.mapper.TbItemDescMapper;
 import com.taotao.mapper.TbItemMapper;
 import com.taotao.pojo.*;
@@ -52,14 +53,18 @@ public class ItemServiceImpl implements ItemService {
         itemDesc.setItemDesc(desc);
         itemDesc.setCreated(new Date());
         itemDesc.setUpdated(new Date());
+        itemDescMapper.insert(itemDesc);
         return TaotaoResult.ok();
     }
 
     @Override
     public TaotaoResult createItem(TbItem item, String desc) throws Exception {
         long itemId= Util.getItemId();
+        item.setId(itemId);
+        item.setStatus(Constant.ITEM_STATUS);
         item.setCreated(new Date());
         item.setUpdated(new Date());
+        itemMapper.insert(item);
         //插入商品描述
         TaotaoResult result=insertItemDesc(itemId,desc);
         if (result.getStatus()!=200){
